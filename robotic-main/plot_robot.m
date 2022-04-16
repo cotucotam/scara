@@ -12,7 +12,7 @@ Scara.theta4 = str2num(get(handles.DisplayTheta4,'String'))*pi/180;
 [ A0_1, A0_2, A0_3, A0_4]=Scara.forward_kinnematic(Scara,Scara.theta1,Scara.theta2,Scara.theta4,Scara.d3);  
 p0 = [0;0;0];
 
-[p1, o1] = cal_pose(A0_1,p0);
+[p1, o1] = cal_pose(A0_1,p0)
 [p2, o2] = cal_pose(A0_2,p0);
 [p3, o3] = cal_pose(A0_3,p0);
 [p4, o4] = cal_pose(A0_4,p0);
